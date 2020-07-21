@@ -1,0 +1,7 @@
+<resources>
+  <string name="app_name">AndroidStudy</string>
+  <string name="home">Home</string>
+  <string name="knowledge">Knowledge</string>
+  <string name="wechat">WeChat</string>
+  <string name="project">Project</string>
+</resources>

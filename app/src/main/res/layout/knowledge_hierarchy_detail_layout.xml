@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+    <RelativeLayout
+      android:id="@+id/knowledge_detail_top_bar"
+      android:layout_width="match_parent"
+      android:background="@color/colorPrimary"
+      android:layout_height="54dp">
+
+        <ImageView
+          android:id="@+id/back_btn"
+          android:layout_marginLeft="6dp"
+          android:layout_centerVertical="true"
+          android:src="@drawable/back"
+          android:layout_width="36dp"
+          android:layout_height="36dp"/>
+
+        <TextView
+          android:id="@+id/knowledge_detail_title"
+          android:layout_toRightOf="@+id/back_btn"
+          android:layout_centerVertical="true"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="42dp"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="36dp"
+          android:textColor="@color/colorWhite"
+          android:textSize="16sp"
+          android:singleLine="true"
+          android:ellipsize="end"/>
+
+    </RelativeLayout>
+
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_below="@+id/knowledge_detail_top_bar"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_width="match_parent"
+      android:background="@color/colorWhite"
+      android:layout_height="2dp"/>
+
+    <com.flyco.tablayout.SlidingTabLayout
+      android:id="@+id/knowledge_hierarchy_detail_tab_layout"
+      android:layout_width="match_parent"
+      android:layout_height="46dp"
+      android:background="@color/colorPrimary"
+      app:tl_textAllCaps="false"
+      app:tl_textBold="BOTH"
+      app:tl_textsize="14sp" />
+
+    <androidx.viewpager.widget.ViewPager
+      android:id="@+id/knowledge_hierarchy_detail_viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/white" />
+  </LinearLayout>
+
+</RelativeLayout>

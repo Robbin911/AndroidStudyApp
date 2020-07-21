@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="60dp"
+  android:background="@color/colorBottomBackGround"
+  android:orientation="horizontal">
+
+  <RelativeLayout
+    android:id="@+id/tab_home"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <RelativeLayout
+      android:layout_centerInParent="true"
+      android:layout_width="60dp"
+      android:layout_height="wrap_content">
+      <ImageView
+        android:id="@+id/iv_home"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/home_unselected"/>
+      <TextView
+        android:id="@+id/bottom_tv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorText1"
+        android:layout_below="@+id/iv_home"
+        android:textSize="10sp"
+        android:text="Home"/>
+    </RelativeLayout>
+
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:id="@+id/tab_knowledge"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <RelativeLayout
+      android:layout_centerInParent="true"
+      android:layout_width="60dp"
+      android:layout_height="wrap_content">
+      <ImageView
+        android:id="@+id/iv_knowledge"
+        android:layout_centerHorizontal="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/knowledge_unselected"/>
+      <TextView
+        android:id="@+id/bottom_tv_knowledge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorText1"
+        android:layout_below="@+id/iv_knowledge"
+        android:textSize="10sp"
+        android:text="Knowledge"/>
+    </RelativeLayout>
+  </RelativeLayout>
+
+
+  <RelativeLayout
+    android:id="@+id/tab_wechat"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <RelativeLayout
+      android:layout_centerInParent="true"
+      android:layout_width="60dp"
+      android:layout_height="wrap_content">
+      <ImageView
+        android:id="@+id/iv_wechat"
+        android:layout_centerHorizontal="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/wechat_unselected"/>
+      <TextView
+        android:id="@+id/bottom_tv_wechat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorText1"
+        android:layout_below="@+id/iv_wechat"
+        android:textSize="10sp"
+        android:text="WeChat"/>
+    </RelativeLayout>
+  </RelativeLayout>
+
+
+  <RelativeLayout
+    android:id="@+id/tab_project"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+    <RelativeLayout
+      android:layout_centerInParent="true"
+      android:layout_width="60dp"
+      android:layout_height="wrap_content">
+      <ImageView
+        android:id="@+id/iv_project"
+        android:layout_centerHorizontal="true"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/project_unselected"/>
+      <TextView
+        android:id="@+id/bottom_tv_project"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/iv_project"
+        android:textColor="@color/colorText1"
+        android:textSize="10sp"
+        android:text="Project"/>
+    </RelativeLayout>
+  </RelativeLayout>
+
+
+</LinearLayout>

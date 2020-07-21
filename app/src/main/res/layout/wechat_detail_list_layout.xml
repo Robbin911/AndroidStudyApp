@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:id="@+id/background"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:background="@color/colorSearchBackGround">
+
+  <com.rengwuxian.materialedittext.MaterialEditText
+    android:id="@+id/search_edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="26dp"
+    android:layout_marginRight="26dp"
+    android:hint="Search"
+    android:textSize="13sp"
+    android:maxLines="1"
+    android:singleLine="true"
+    android:background="@color/colorPrimary"
+    android:textColor="@color/colorText2"
+    app:met_primaryColor="@color/colorPrimary"
+    app:met_textColor="@color/colorText2"
+    app:met_textColorHint="@color/colorText1"
+    app:met_underlineColor="@color/colorPrimary" />
+
+  <com.scwang.smartrefresh.layout.SmartRefreshLayout
+    android:layout_below="@+id/search_edit"
+    android:id="@+id/wechat_detail_refresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/wechat_list_recycler_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/colorWhite" />
+  </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</RelativeLayout>

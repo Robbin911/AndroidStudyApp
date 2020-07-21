@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/knowledge_item_layout"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:layout_marginBottom="8dp"
+  android:layout_marginEnd="16dp"
+  android:layout_marginStart="16dp"
+  android:layout_marginTop="8dp"
+  android:clickable="true"
+  android:focusable="true"
+  android:foreground="?android:attr/selectableItemBackground"
+  app:cardBackgroundColor="@color/colorWhite"
+  app:cardCornerRadius="3dp"
+  app:cardElevation="3dp">
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+      android:id="@+id/knowledge_hierarchy_enter_iv"
+      android:layout_width="24dp"
+      android:layout_height="32dp"
+      android:src="@drawable/left_arrow"
+      android:contentDescription="@null"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="6dp" />
+
+    <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="start"
+      android:layout_marginRight="6dp"
+      android:layout_alignParentLeft="true"
+      android:layout_toLeftOf="@id/knowledge_hierarchy_enter_iv">
+
+      <TextView
+        android:id="@+id/item_knowledge_hierarchy_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:textColor="@color/colorPrimary"
+        tools:text="开发环境" />
+
+      <TextView
+        android:id="@+id/item_knowledge_hierarchy_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/colorText2"
+        tools:text="Android Studio相关   gradle  官方发布" />
+    </LinearLayout>
+  </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/search_history_item_layout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  app:cardBackgroundColor="@color/colorBackGround"
+  android:foreground="?attr/selectableItemBackgroundBorderless"
+  android:layout_marginTop="2dp"
+  android:layout_marginLeft="16dp"
+  android:layout_marginRight="16dp"
+  android:layout_marginBottom="2dp"
+  app:cardCornerRadius="5dp"
+  app:cardElevation="5dp"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:id="@+id/history_name"
+      android:layout_centerInParent="true"
+      android:layout_marginLeft="6dp"
+      android:layout_marginRight="6dp"
+      android:layout_marginTop="2dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="15sp"
+      android:text="search history"
+      android:textColor="@color/colorText2"
+      android:layout_marginBottom="2dp"/>
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

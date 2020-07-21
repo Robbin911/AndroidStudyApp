@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/article_layout"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  app:cardBackgroundColor="@color/colorWhite"
+  android:foreground="?attr/selectableItemBackgroundBorderless"
+  android:layout_marginLeft="16dp"
+  android:layout_marginRight="16dp"
+  android:layout_marginTop="8dp"
+  android:layout_marginBottom="8dp"
+  android:clickable="true"
+  android:focusable="true"
+  app:cardCornerRadius="3dp"
+  app:cardElevation="3dp"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+      android:orientation="horizontal"
+      android:id="@+id/article_name_ll"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content">
+        <ImageView
+          android:layout_gravity="center"
+
+          android:layout_width="20dp"
+          android:layout_height="20dp"
+          android:src="@drawable/author"/>
+        <TextView
+          android:id="@+id/author_name"
+          android:layout_marginLeft="5dp"
+          android:gravity="top"
+          android:layout_width="wrap_content"
+          android:layout_height="24dp"
+          android:singleLine="true"
+          android:layout_gravity="center"
+          android:textSize="13sp"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:text="name"/>
+      </LinearLayout>
+
+
+      <LinearLayout
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:layout_width="0dp"
+        android:gravity="right"
+        android:layout_height="match_parent">
+        <TextView
+          android:id="@+id/chapter_name"
+          android:gravity="center"
+          android:layout_width="wrap_content"
+          android:layout_height="20dp"
+          android:textColor="@color/colorPrimary"
+          android:layout_gravity="center"
+          android:singleLine="true"
+          android:textSize="13sp"
+          android:ellipsize="end"
+          android:maxLines="1"
+          android:text="name/name"/>
+      </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+      android:id="@+id/article_desc"
+      android:layout_marginLeft="16dp"
+      android:layout_marginRight="16dp"
+      android:layout_below="@id/article_name_ll"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="15sp"
+      android:text="最新开源控件"/>
+
+    <LinearLayout
+      android:layout_below="@id/article_desc"
+      android:layout_marginTop="5dp"
+      android:layout_marginLeft="16dp"
+      android:layout_marginBottom="10dp"
+      android:orientation="horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+      <ImageView
+        android:src="@drawable/time"
+        android:layout_width="16dp"
+        android:layout_height="16dp"/>
+      <TextView
+        android:id="@+id/time_text"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:text="2020-1-1"/>
+    </LinearLayout>
+
+    <com.example.androidstudy.view.LikeView
+      android:id="@+id/like_view"
+      android:layout_below="@id/article_desc"
+      android:layout_marginRight="16dp"
+      android:layout_alignParentRight="true"
+      android:layout_width="20dp"
+      android:layout_height="20dp"/>
+
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

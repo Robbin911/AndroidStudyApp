@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/root_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:background="@color/colorPrimary"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="50dp"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+      android:id="@+id/login_top"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+
+      <ImageView
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="108dp"
+        android:src="@drawable/register" />
+
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+      android:id="@+id/username"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="40dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="20dp"
+      app:met_floatingLabel="highlight"
+      android:hint="User Name"
+      android:maxLines="1"
+      android:singleLine="true"
+      app:met_maxCharacters="16"
+      app:met_minCharacters="4"
+      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+      app:met_floatingLabelText="User Name"
+      app:met_clearButton="true"
+      app:met_floatingLabelTextColor="@color/colorWhite"
+      app:met_baseColor="@color/colorWhite"
+      app:met_primaryColor="@color/colorWhite"/>
+
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+      android:id="@+id/password"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginLeft="20dp"
+      app:met_floatingLabel="highlight"
+      app:met_floatingLabelText="Password"
+      android:inputType="textPassword"
+      android:maxLines="1"
+      android:singleLine="true"
+      app:met_maxCharacters="16"
+      app:met_minCharacters="4"
+      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+      android:hint="Password"
+      app:met_clearButton="true"
+      app:met_floatingLabelTextColor="@color/colorWhite"
+      app:met_baseColor="@color/colorWhite"
+      app:met_primaryColor="@color/colorWhite"/>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+      android:id="@+id/password_confirm"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
+      android:hint="Repeat Password"
+      android:maxLines="1"
+      android:inputType="textPassword"
+      android:singleLine="true"
+      app:met_baseColor="@color/colorWhite"
+      app:met_clearButton="true"
+      app:met_floatingLabel="highlight"
+      app:met_floatingLabelText="Password"
+      app:met_floatingLabelTextColor="@color/colorWhite"
+      app:met_maxCharacters="16"
+      app:met_minCharacters="4"
+      app:met_primaryColor="@color/colorWhite" />
+    <androidx.cardview.widget.CardView
+      android:id="@+id/btn_confirm"
+      android:layout_marginTop="60dp"
+      app:cardBackgroundColor="@color/colorWhite"
+      android:foreground="?attr/selectableItemBackgroundBorderless"
+      android:layout_marginLeft="54dp"
+      android:layout_marginRight="54dp"
+      android:clickable="true"
+      android:focusable="true"
+      app:cardCornerRadius="10dp"
+      app:cardElevation="3dp"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:text="CONFIRM"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+  </LinearLayout>
+
+
+</RelativeLayout>
